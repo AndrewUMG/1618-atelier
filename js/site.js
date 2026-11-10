@@ -7,7 +7,7 @@ window.SITE = {
   team: [
     { name: 'Santiago Martínez', role: 'Arquitecto · Socio fundador' },
     { name: 'Angel Méndez', role: 'Arquitecto · Socio fundador' },
-    { name: 'Emilio Ángeles', role: 'Arquitecto · Socio fundadora' },
+    { name: 'Emilio Ángeles', role: 'Arquitecto · Socio fundador' },
     { name: 'Adrián Alejandro del Ángel', role: 'Arquitecto · Socio fundador' }
   ],
   social: {
