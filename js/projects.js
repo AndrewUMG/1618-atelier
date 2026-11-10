@@ -156,31 +156,21 @@ window.PROJECTS = [
       'Texto provisional. La propuesta se estudió mediante diagramas, maquetas de sitio y de estructura, y dibujos de plantas, cortes y elevaciones.',
       'Texto provisional. Descripción del programa, los materiales y la estrategia constructiva por confirmar con la agencia.'
     ],
-    quote: 'Cita provisional, por confirmar.',
+    quote: 'Una estación que cuida a la ciudad y se deja habitar por ella.',
     gallery: [
-      { src: 'assets/img/estacion-madriguera/vista-1', alt: 'Vista exterior de la estación con un camión de bomberos', layout: 'full' },
       { src: 'assets/img/estacion-madriguera/norte', alt: 'Fachada norte de la estación con las bahías de camiones', layout: 'full' },
       { src: 'assets/img/estacion-madriguera/interior-1', alt: 'Interior de la estación con cocina y entrepiso', layout: 'half' },
       { src: 'assets/img/estacion-madriguera/interior-2', alt: 'Interior de la estación visto desde otro ángulo', layout: 'half' },
       { src: 'assets/img/estacion-madriguera/cortes-collage', alt: 'Collage de cortes de la estación', layout: 'half' },
       { src: 'assets/img/estacion-madriguera/estructura-collage', alt: 'Collage de la estructura sobre el terreno', layout: 'half' },
-      { src: 'assets/img/estacion-madriguera/diagrama-parques', alt: 'Diagrama de parques y vialidades alrededor del predio', layout: 'full' },
-      { src: 'assets/img/estacion-madriguera/diagrama-vialidades', alt: 'Acercamiento a las vialidades que rodean el predio', layout: 'half' },
-      { src: 'assets/img/estacion-madriguera/diagrama-luz', alt: 'Diagrama de luz y orientación', layout: 'half' },
-      { src: 'assets/img/estacion-madriguera/modulos', alt: 'Diagrama de módulos de la estación', layout: 'half' },
-      { src: 'assets/img/estacion-madriguera/porada', alt: 'Dibujo lineal de la cubierta y la torre', layout: 'half' },
       { src: 'assets/img/estacion-madriguera/axo', alt: 'Axonometría del volumen de la estación', layout: 'full' },
-      { src: 'assets/img/estacion-madriguera/servidos-servidores', alt: 'Diagrama de espacios servidos y servidores', layout: 'full' },
       { src: 'assets/img/estacion-madriguera/planta-conjunto', alt: 'Planta de conjunto', layout: 'full', caption: 'Planta de conjunto.' },
       { src: 'assets/img/estacion-madriguera/planta-baja', alt: 'Planta baja', layout: 'full', caption: 'Planta baja.' },
       { src: 'assets/img/estacion-madriguera/planta-alta', alt: 'Planta alta', layout: 'full', caption: 'Planta alta.' },
       { src: 'assets/img/estacion-madriguera/corte-transversal-1', alt: 'Corte transversal 1', layout: 'full', caption: 'Corte transversal 1.' },
       { src: 'assets/img/estacion-madriguera/corte-transversal-2', alt: 'Corte transversal 2', layout: 'full', caption: 'Corte transversal 2.' },
       { src: 'assets/img/estacion-madriguera/corte-longitudinal', alt: 'Corte longitudinal', layout: 'full', caption: 'Corte longitudinal.' },
-      { src: 'assets/img/estacion-madriguera/elevacion-principal', alt: 'Elevación principal', layout: 'full', caption: 'Elevación principal.' },
       { src: 'assets/img/estacion-madriguera/corte-fachada', alt: 'Corte por fachada con detalle constructivo', layout: 'full', caption: 'Corte por fachada.' },
-      { src: 'assets/img/estacion-madriguera/maqueta-1', alt: 'Maqueta de la estación con estructura roja y cubierta blanca', layout: 'half' },
-      { src: 'assets/img/estacion-madriguera/maqueta-2', alt: 'Maqueta de la estación vista de frente', layout: 'half' },
       { src: 'assets/img/estacion-madriguera/maqueta-3', alt: 'Maqueta con torre y arbolado al fondo', layout: 'half' },
       { src: 'assets/img/estacion-madriguera/maqueta-4', alt: 'Maqueta con rampa y cubierta inclinada', layout: 'half' },
       { src: 'assets/img/estacion-madriguera/maqueta-5', alt: 'Maqueta con la torre y la estructura de la estación', layout: 'half' },
@@ -190,10 +180,9 @@ window.PROJECTS = [
       { src: 'assets/img/estacion-madriguera/maqueta-9', alt: 'Maqueta vista en perfil sobre la base', layout: 'full' },
       { src: 'assets/img/estacion-madriguera/modelo-estructura-1', alt: 'Maqueta de estructura sobre terreno de tierra', layout: 'half' },
       { src: 'assets/img/estacion-madriguera/modelo-estructura-2', alt: 'Detalle de la maqueta de estructura', layout: 'half' },
-      { src: 'assets/img/estacion-madriguera/modelo-estructura-3', alt: 'Maqueta de estructura vista de lado', layout: 'half' },
       { src: 'assets/img/estacion-madriguera/modelo-estructura-4', alt: 'Maqueta de estructura vista en planta', layout: 'half' },
-      { src: 'assets/img/estacion-madriguera/modelo-estructura-5', alt: 'Maqueta de estructura con base de madera', layout: 'half' },
-      { src: 'assets/img/estacion-madriguera/modelo-estructura-6', alt: 'Maqueta de estructura con columnas y cubierta', layout: 'half' }
+      { src: 'assets/img/estacion-madriguera/modelo-estructura-6', alt: 'Maqueta de estructura con columnas y cubierta', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/modelo-estructura-5', alt: 'Maqueta de estructura con base de madera', layout: 'full' }
     ]
   }
 ];
