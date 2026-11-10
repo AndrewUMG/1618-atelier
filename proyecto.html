@@ -43,12 +43,7 @@
         <a class="nav__link" href="index.html#nosotros">Nosotros</a>
         <a class="nav__link" href="index.html#contacto">Contacto</a>
       </nav>
-      <div class="header__social">
-        <a href="https://www.instagram.com/1618.atelier/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
-        <a href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
-        <a href="#" data-social="tiktok" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon"><use href="#i-tiktok"/></svg></a>
-        <a href="https://wa.me/50255627167" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon"><use href="#i-whatsapp"/></svg></a>
-      </div>
+      <div class="header__social" data-social-row="header"></div>
       <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil" data-menu-open>
         <svg class="icon icon--lg"><use href="#i-menu"/></svg>
       </button>
@@ -68,13 +63,8 @@
       <a href="index.html#contacto"><span class="eyebrow">04</span>Contacto</a>
     </nav>
     <div class="mobile-menu__bottom">
-      <a class="small" href="mailto:santiagom@1618-atelier.com">santiagom@1618-atelier.com</a>
-      <div class="social-row">
-        <a class="social-btn social-btn--dark" href="https://wa.me/50255627167" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon"><use href="#i-whatsapp"/></svg></a>
-        <a class="social-btn social-btn--dark" href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
-        <a class="social-btn social-btn--dark" href="#" data-social="tiktok" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon"><use href="#i-tiktok"/></svg></a>
-        <a class="social-btn social-btn--dark" href="https://www.instagram.com/1618.atelier/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
-      </div>
+      <a class="small" data-email></a>
+      <div class="social-row" data-social-row="row"></div>
     </div>
   </div>
 
@@ -101,26 +91,22 @@
         <nav class="footer__nav" aria-label="Pie de página">
           <a href="index.html#proyectos">Proyectos</a><a href="index.html#nosotros">Nosotros</a><a href="index.html#contacto">Contacto</a>
         </nav>
-        <div class="social-row">
-          <a class="social-btn social-btn--dark" href="https://wa.me/50255627167" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon"><use href="#i-whatsapp"/></svg></a>
-          <a class="social-btn social-btn--dark" href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
-          <a class="social-btn social-btn--dark" href="#" data-social="tiktok" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon"><use href="#i-tiktok"/></svg></a>
-          <a class="social-btn social-btn--dark" href="https://www.instagram.com/1618.atelier/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
-        </div>
+        <div class="social-row" data-social-row="row"></div>
       </div>
       <div class="footer__bottom small">
         <span>© <span data-year>2026</span> 1618 Atelier. Todos los derechos reservados.</span>
-        <span>Monterrey, México &nbsp;·&nbsp; Guatemala</span>
+        <span data-locations></span>
       </div>
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/50255627167" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <a class="wa-float" data-wa-link href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
     <svg class="icon"><use href="#i-whatsapp"/></svg><span>Escríbenos</span>
   </a>
 
   <script src="js/projects.js"></script>
   <script src="js/project.js"></script>
+  <script src="js/site.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

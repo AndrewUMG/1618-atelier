@@ -84,21 +84,7 @@
         <a class="nav__link" href="#nosotros">Nosotros</a>
         <a class="nav__link" href="#contacto">Contacto</a>
       </nav>
-      <div class="header__social">
-        <a href="https://www.instagram.com/1618.atelier/" target="_blank" rel="noopener" aria-label="Instagram"><svg
-            class="icon">
-            <use href="#i-instagram" />
-          </svg></a>
-        <a href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon">
-            <use href="#i-facebook" />
-          </svg></a>
-        <a href="#" data-social="tiktok" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon">
-            <use href="#i-tiktok" />
-          </svg></a>
-        <a href="https://wa.me/50255627167" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon">
-            <use href="#i-whatsapp" />
-          </svg></a>
-      </div>
+      <div class="header__social" data-social-row="header"></div>
       <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil"
         data-menu-open>
         <svg class="icon icon--lg">
@@ -125,25 +111,8 @@
       <a href="#contacto"><span class="eyebrow">04</span>Contacto</a>
     </nav>
     <div class="mobile-menu__bottom">
-      <a class="small" href="mailto:santiagom@1618-atelier.com">santiagom@1618-atelier.com</a>
-      <div class="social-row">
-        <a class="social-btn social-btn--dark" href="https://wa.me/50255627167" target="_blank" rel="noopener"
-          aria-label="WhatsApp"><svg class="icon">
-            <use href="#i-whatsapp" />
-          </svg></a>
-        <a class="social-btn social-btn--dark" href="#" data-social="facebook" target="_blank" rel="noopener"
-          aria-label="Facebook"><svg class="icon">
-            <use href="#i-facebook" />
-          </svg></a>
-        <a class="social-btn social-btn--dark" href="#" data-social="tiktok" target="_blank" rel="noopener"
-          aria-label="TikTok"><svg class="icon">
-            <use href="#i-tiktok" />
-          </svg></a>
-        <a class="social-btn social-btn--dark" href="https://www.instagram.com/1618.atelier/" target="_blank"
-          rel="noopener" aria-label="Instagram"><svg class="icon">
-            <use href="#i-instagram" />
-          </svg></a>
-      </div>
+      <a class="small" data-email></a>
+      <div class="social-row" data-social-row="row"></div>
     </div>
   </div>
 
@@ -277,28 +246,7 @@
 
         <div class="team">
           <p class="eyebrow muted reveal">El equipo</p>
-          <ul class="team__grid">
-            <li class="team__member reveal">
-              <div class="team__photo"><span class="eyebrow muted">Retrato</span></div>
-              <h4 class="h3">Santiago Martínez</h4>
-              <p class="small muted">Arquitecto · Socio fundador</p>
-            </li>
-            <li class="team__member reveal">
-              <div class="team__photo"><span class="eyebrow muted">Retrato</span></div>
-              <h4 class="h3">Angel Méndez</h4>
-              <p class="small muted">Arquitecto · Socio fundador</p>
-            </li>
-            <li class="team__member reveal">
-              <div class="team__photo"><span class="eyebrow muted">Retrato</span></div>
-              <h4 class="h3">Emilio Ángeles</h4>
-              <p class="small muted">Arquitecto · Socio fundadora</p>
-            </li>
-            <li class="team__member reveal">
-              <div class="team__photo"><span class="eyebrow muted">Retrato</span></div>
-              <h4 class="h3">Adrián Alejandro del Ángel</h4>
-              <p class="small muted">Arquitecto · Socio fundador</p>
-            </li>
-          </ul>
+          <ul class="team__grid" data-team></ul>
         </div>
       </div>
     </section>
@@ -311,32 +259,7 @@
           <h2 class="h1 reveal">Hablemos de<br>tu proyecto</h2>
           <p class="body-l contact__lead reveal">Cuéntanos sobre tu idea, tu terreno o tu espacio. Te acompañamos desde
             la consultoría inicial hasta la obra terminada.</p>
-          <ul class="contact__list">
-            <li><a href="mailto:santiagom@1618-atelier.com"><svg class="icon">
-                  <use href="#i-mail" />
-                </svg><span><span class="eyebrow muted">Correo</span><span
-                    class="body-l">santiagom@1618-atelier.com</span></span><svg class="icon icon--sm muted">
-                  <use href="#i-arrow-up-right" />
-                </svg></a></li>
-            <li><a href="tel:+528122584310"><svg class="icon">
-                  <use href="#i-phone" />
-                </svg><span><span class="eyebrow muted">Llamadas</span><span class="body-l">+52 81 2258
-                    4310</span></span><svg class="icon icon--sm muted">
-                  <use href="#i-arrow-up-right" />
-                </svg></a></li>
-            <li><a href="https://wa.me/50255627167" target="_blank" rel="noopener"><svg class="icon">
-                  <use href="#i-whatsapp" />
-                </svg><span><span class="eyebrow muted">WhatsApp</span><span class="body-l">+502 5562
-                    7167</span></span><svg class="icon icon--sm muted">
-                  <use href="#i-arrow-up-right" />
-                </svg></a></li>
-            <li><a href="https://www.instagram.com/1618.atelier/" target="_blank" rel="noopener"><svg class="icon">
-                  <use href="#i-instagram" />
-                </svg><span><span class="eyebrow muted">Instagram</span><span
-                    class="body-l">@1618.atelier</span></span><svg class="icon icon--sm muted">
-                  <use href="#i-arrow-up-right" />
-                </svg></a></li>
-          </ul>
+          <ul class="contact__list" data-contact-list></ul>
         </div>
 
         <form class="form reveal" data-contact-form novalidate>
@@ -385,33 +308,16 @@
         <nav class="footer__nav" aria-label="Pie de página">
           <a href="#proyectos">Proyectos</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
         </nav>
-        <div class="social-row">
-          <a class="social-btn social-btn--dark" href="https://wa.me/50255627167" target="_blank" rel="noopener"
-            aria-label="WhatsApp"><svg class="icon">
-              <use href="#i-whatsapp" />
-            </svg></a>
-          <a class="social-btn social-btn--dark" href="#" data-social="facebook" target="_blank" rel="noopener"
-            aria-label="Facebook"><svg class="icon">
-              <use href="#i-facebook" />
-            </svg></a>
-          <a class="social-btn social-btn--dark" href="#" data-social="tiktok" target="_blank" rel="noopener"
-            aria-label="TikTok"><svg class="icon">
-              <use href="#i-tiktok" />
-            </svg></a>
-          <a class="social-btn social-btn--dark" href="https://www.instagram.com/1618.atelier/" target="_blank"
-            rel="noopener" aria-label="Instagram"><svg class="icon">
-              <use href="#i-instagram" />
-            </svg></a>
-        </div>
+        <div class="social-row" data-social-row="row"></div>
       </div>
       <div class="footer__bottom small">
         <span>© <span data-year>2026</span> 1618 Atelier. Todos los derechos reservados.</span>
-        <span>Monterrey, México &nbsp;·&nbsp; Guatemala</span>
+        <span data-locations></span>
       </div>
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/50255627167" target="_blank" rel="noopener"
+  <a class="wa-float" data-wa-link href="#" target="_blank" rel="noopener"
     aria-label="Escríbenos por WhatsApp">
     <svg class="icon">
       <use href="#i-whatsapp" />
@@ -419,6 +325,7 @@
   </a>
 
   <script src="js/projects.js"></script>
+  <script src="js/site.js"></script>
   <script src="js/main.js"></script>
 </body>
 
