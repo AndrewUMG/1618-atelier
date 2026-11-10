@@ -25,6 +25,9 @@
     <symbol id="i-arrow-down" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M6 15l6 6 6-6" stroke="currentColor" stroke-width="1.5"/></symbol>
     <symbol id="i-menu" viewBox="0 0 24 24" fill="none"><path d="M3 8h18M3 16h18" stroke="currentColor" stroke-width="1.5"/></symbol>
     <symbol id="i-close" viewBox="0 0 24 24" fill="none"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-zoom-in" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-zoom-out" viewBox="0 0 24 24" fill="none"><path d="M5 12h14" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-fit" viewBox="0 0 24 24" fill="none"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" stroke="currentColor" stroke-width="1.5"/></symbol>
   </svg>
 
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -76,8 +79,13 @@
   </main>
 
   <div class="lightbox" data-lightbox hidden>
-    <button type="button" aria-label="Cerrar imagen" data-lightbox-close><svg class="icon icon--lg"><use href="#i-close"/></svg></button>
-    <img alt="">
+    <button type="button" class="lightbox__close" aria-label="Cerrar imagen" data-lightbox-close><svg class="icon icon--lg"><use href="#i-close"/></svg></button>
+    <img alt="" draggable="false">
+    <div class="lightbox__tools" role="toolbar" aria-label="Zoom de la imagen" data-lightbox-tools>
+      <button type="button" aria-label="Alejar" data-zoom="out"><svg class="icon"><use href="#i-zoom-out"/></svg></button>
+      <button type="button" aria-label="Ajustar a la ventana" data-zoom="fit"><svg class="icon"><use href="#i-fit"/></svg></button>
+      <button type="button" aria-label="Acercar" data-zoom="in"><svg class="icon"><use href="#i-zoom-in"/></svg></button>
+    </div>
   </div>
 
   <!-- Footer -->
