@@ -29,7 +29,14 @@ window.PROJECTS = [
     gallery: [
       { src: 'assets/img/paneto/render-2', alt: 'Interior de Paneto con barra y repisas de madera', layout: 'half' },
       { src: 'assets/img/paneto/render-3', alt: 'Barra de servicio de Paneto', layout: 'half' },
-      { src: 'assets/img/paneto/fachada', alt: 'Fachada de Paneto hacia la calle', layout: 'full', caption: 'Fachada — el local se integra a la escala de la calle.' }
+      { src: 'assets/img/paneto/fachada', alt: 'Fachada de Paneto hacia la calle', layout: 'full', caption: 'Fachada — el local se integra a la escala de la calle.' },
+      { src: 'assets/img/paneto/fachada-alzado', alt: 'Alzado de la fachada de Paneto en dibujo azul', layout: 'full', caption: 'Alzado de fachada.' },
+      { src: 'assets/img/paneto/corte-1', alt: 'Corte 1 de Paneto con la barra y el área de servicio', layout: 'full', caption: 'Corte 1.' },
+      { src: 'assets/img/paneto/corte-2', alt: 'Corte 2 de Paneto con la zona de mesas', layout: 'full', caption: 'Corte 2.' },
+      { src: 'assets/img/paneto/planta-baja', alt: 'Planta baja de Paneto', layout: 'half', caption: 'Planta baja.' },
+      { src: 'assets/img/paneto/iso', alt: 'Isométrico seccionado del interior de Paneto', layout: 'half' },
+      { src: 'assets/img/paneto/iso-inferior', alt: 'Isométrico de Paneto visto desde abajo con la estructura suspendida', layout: 'half' },
+      { src: 'assets/img/paneto/render-1', alt: 'Barra de pan y cafetería de Paneto frente al muro de azulejo azul', layout: 'half' }
     ]
   },
   {
@@ -56,7 +63,14 @@ window.PROJECTS = [
       { src: 'assets/img/casa-corten/escalera', alt: 'Escalera con celosía de madera y muro de corten', layout: 'half' },
       { src: 'assets/img/casa-corten/escalera-noche', alt: 'Modelo de la escalera', layout: 'half' },
       { src: 'assets/img/casa-corten/corte', alt: 'Corte longitudinal de Casa Corten', layout: 'full', caption: 'Corte longitudinal — el proyecto se escalona siguiendo la pendiente natural del terreno.' },
-      { src: 'assets/img/casa-corten/explotado', alt: 'Axonometría explotada de Casa Corten', layout: 'full' }
+      { src: 'assets/img/casa-corten/explotado', alt: 'Axonometría explotada de Casa Corten', layout: 'full' },
+      { src: 'assets/img/casa-corten/iso', alt: 'Isométrico sombreado de Casa Corten sobre el terreno', layout: 'half' },
+      { src: 'assets/img/casa-corten/explotado-2', alt: 'Axonometría explotada de Casa Corten por niveles', layout: 'half' },
+      { src: 'assets/img/casa-corten/volumetria', alt: 'Secuencia de volumetría de Casa Corten sobre el terreno', layout: 'half', caption: 'Secuencia volumétrica.' },
+      { src: 'assets/img/casa-corten/escalera-axo', alt: 'Axonometría de la escalera de acero corten', layout: 'half' },
+      { src: 'assets/img/casa-corten/plantas', alt: 'Plantas de Casa Corten: nivel 0, planta baja y planta alta', layout: 'full', caption: 'Plantas — nivel 0, baja y alta.' },
+      { src: 'assets/img/casa-corten/corte-color', alt: 'Corte longitudinal de Casa Corten en color', layout: 'full' },
+      { src: 'assets/img/casa-corten/corte-fachada', alt: 'Corte longitudinal y fachada de Casa Corten', layout: 'full', caption: 'Corte longitudinal y fachada.' }
     ]
   },
   {
@@ -82,7 +96,12 @@ window.PROJECTS = [
     gallery: [
       { src: 'assets/img/casa-sierra/axo', alt: 'Axonometría de los volúmenes de Casa Sierra', layout: 'full' },
       { src: 'assets/img/casa-sierra/renders', alt: 'Escenas interiores de Casa Sierra', layout: 'half' },
-      { src: 'assets/img/casa-sierra/sol', alt: 'Estudio de asoleamiento', layout: 'half', caption: 'Estudio de asoleamiento.' }
+      { src: 'assets/img/casa-sierra/sol', alt: 'Estudio de asoleamiento', layout: 'half', caption: 'Estudio de asoleamiento.' },
+      { src: 'assets/img/casa-sierra/axo-base', alt: 'Axonometría en blanco de los módulos de Casa Sierra', layout: 'full' },
+      { src: 'assets/img/casa-sierra/corte', alt: 'Corte longitudinal de Casa Sierra en color', layout: 'full', caption: 'Corte longitudinal.' },
+      { src: 'assets/img/casa-sierra/corte-bn', alt: 'Corte longitudinal de Casa Sierra en blanco y negro', layout: 'full' },
+      { src: 'assets/img/casa-sierra/concepto', alt: 'Modelo conceptual de Casa Sierra con franjas de color', layout: 'half', caption: 'Modelo conceptual.' },
+      { src: 'assets/img/casa-sierra/escena-2', alt: 'Escalera de la casa con luz y sombra sobre el pasto', layout: 'half' }
     ]
   },
   {
@@ -110,7 +129,71 @@ window.PROJECTS = [
       { src: 'assets/img/col-independencia/zonificacion', alt: 'Axonometría de zonificación', layout: 'half' },
       { src: 'assets/img/col-independencia/corte', alt: 'Corte transversal', layout: 'full', caption: 'Corte transversal.' },
       { src: 'assets/img/col-independencia/estructura', alt: 'Axonometría estructural', layout: 'half' },
-      { src: 'assets/img/col-independencia/axo', alt: 'Axonometría general', layout: 'half' }
+      { src: 'assets/img/col-independencia/axo', alt: 'Axonometría general', layout: 'half' },
+      { src: 'assets/img/col-independencia/render', alt: 'Vista del conjunto con la cubierta azul y el patio', layout: 'full' },
+      { src: 'assets/img/col-independencia/planta-baja', alt: 'Planta baja del equipamiento', layout: 'half', caption: 'Planta baja.' },
+      { src: 'assets/img/col-independencia/explotado', alt: 'Axonometría explotada por niveles', layout: 'half' },
+      { src: 'assets/img/col-independencia/elevacion', alt: 'Elevación sur', layout: 'full', caption: 'Elevación sur.' },
+      { src: 'assets/img/col-independencia/elevacion-este', alt: 'Elevación este', layout: 'full', caption: 'Elevación este.' }
+    ]
+  },
+  {
+    slug: 'estacion-madriguera',
+    name: 'Estación Madriguera',
+    type: 'Equipamiento',
+    subtitle: 'Estación de bomberos',
+    location: 'Por confirmar',
+    shortLocation: 'Por confirmar',
+    year: 'Por confirmar',
+    area: 'Por confirmar',
+    status: 'Por confirmar',
+    service: 'Arquitectura',
+    cover: 'assets/img/estacion-madriguera/maqueta-1',
+    hero: 'assets/img/estacion-madriguera/vista-1',
+    lead: 'Una estación de bomberos que se asienta sobre un predio triangular y se abre a la calle con una cubierta inclinada y una estructura ligera.',
+    body: [
+      'Texto provisional. Estación Madriguera se desarrolla sobre un predio triangular entre vialidades y áreas verdes, con un volumen largo que se adapta a la topografía.',
+      'Texto provisional. La propuesta se estudió mediante diagramas, maquetas de sitio y de estructura, y dibujos de plantas, cortes y elevaciones.',
+      'Texto provisional. Descripción del programa, los materiales y la estrategia constructiva por confirmar con la agencia.'
+    ],
+    quote: 'Cita provisional, por confirmar.',
+    gallery: [
+      { src: 'assets/img/estacion-madriguera/vista-1', alt: 'Vista exterior de la estación con un camión de bomberos', layout: 'full' },
+      { src: 'assets/img/estacion-madriguera/norte', alt: 'Fachada norte de la estación con las bahías de camiones', layout: 'full' },
+      { src: 'assets/img/estacion-madriguera/interior-1', alt: 'Interior de la estación con cocina y entrepiso', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/interior-2', alt: 'Interior de la estación visto desde otro ángulo', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/cortes-collage', alt: 'Collage de cortes de la estación', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/estructura-collage', alt: 'Collage de la estructura sobre el terreno', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/diagrama-parques', alt: 'Diagrama de parques y vialidades alrededor del predio', layout: 'full' },
+      { src: 'assets/img/estacion-madriguera/diagrama-vialidades', alt: 'Acercamiento a las vialidades que rodean el predio', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/diagrama-luz', alt: 'Diagrama de luz y orientación', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/modulos', alt: 'Diagrama de módulos de la estación', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/porada', alt: 'Dibujo lineal de la cubierta y la torre', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/axo', alt: 'Axonometría del volumen de la estación', layout: 'full' },
+      { src: 'assets/img/estacion-madriguera/servidos-servidores', alt: 'Diagrama de espacios servidos y servidores', layout: 'full' },
+      { src: 'assets/img/estacion-madriguera/planta-conjunto', alt: 'Planta de conjunto', layout: 'full', caption: 'Planta de conjunto.' },
+      { src: 'assets/img/estacion-madriguera/planta-baja', alt: 'Planta baja', layout: 'full', caption: 'Planta baja.' },
+      { src: 'assets/img/estacion-madriguera/planta-alta', alt: 'Planta alta', layout: 'full', caption: 'Planta alta.' },
+      { src: 'assets/img/estacion-madriguera/corte-transversal-1', alt: 'Corte transversal 1', layout: 'full', caption: 'Corte transversal 1.' },
+      { src: 'assets/img/estacion-madriguera/corte-transversal-2', alt: 'Corte transversal 2', layout: 'full', caption: 'Corte transversal 2.' },
+      { src: 'assets/img/estacion-madriguera/corte-longitudinal', alt: 'Corte longitudinal', layout: 'full', caption: 'Corte longitudinal.' },
+      { src: 'assets/img/estacion-madriguera/elevacion-principal', alt: 'Elevación principal', layout: 'full', caption: 'Elevación principal.' },
+      { src: 'assets/img/estacion-madriguera/corte-fachada', alt: 'Corte por fachada con detalle constructivo', layout: 'full', caption: 'Corte por fachada.' },
+      { src: 'assets/img/estacion-madriguera/maqueta-1', alt: 'Maqueta de la estación con estructura roja y cubierta blanca', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/maqueta-2', alt: 'Maqueta de la estación vista de frente', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/maqueta-3', alt: 'Maqueta con torre y arbolado al fondo', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/maqueta-4', alt: 'Maqueta con rampa y cubierta inclinada', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/maqueta-5', alt: 'Maqueta con la torre y la estructura de la estación', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/maqueta-6', alt: 'Maqueta vista desde el lado de la calle', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/maqueta-7', alt: 'Maqueta con la cubierta y las bahías', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/maqueta-8', alt: 'Maqueta con el edificio vecino', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/maqueta-9', alt: 'Maqueta vista en perfil sobre la base', layout: 'full' },
+      { src: 'assets/img/estacion-madriguera/modelo-estructura-1', alt: 'Maqueta de estructura sobre terreno de tierra', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/modelo-estructura-2', alt: 'Detalle de la maqueta de estructura', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/modelo-estructura-3', alt: 'Maqueta de estructura vista de lado', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/modelo-estructura-4', alt: 'Maqueta de estructura vista en planta', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/modelo-estructura-5', alt: 'Maqueta de estructura con base de madera', layout: 'half' },
+      { src: 'assets/img/estacion-madriguera/modelo-estructura-6', alt: 'Maqueta de estructura con columnas y cubierta', layout: 'half' }
     ]
   }
 ];
