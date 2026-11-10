@@ -13,7 +13,7 @@ window.PROJECTS = [
     subtitle: 'Cafetería y panadería',
     location: 'Ciudad de Guatemala, Guatemala',
     shortLocation: 'Guatemala',
-    year: '2025',
+    year: '2026',
     area: '85 m²',
     status: 'En construcción',
     service: 'Arquitectura interior + Consultoría',
@@ -23,7 +23,7 @@ window.PROJECTS = [
     body: [
       'Paneto parte de una fachada sencilla en una calle de escala vecinal. La intervención respeta esa escala y concentra el carácter en el interior, donde el color y la luz construyen la identidad del lugar.',
       'La barra de madera organiza el recorrido: del aparador de pan a la cafetera y de ahí a las mesas. Una estructura metálica suspendida resuelve iluminación y exhibición sin tocar los muros.',
-      'Materiales durables y de fácil mantenimiento —azulejo, acero y madera— permiten que el espacio envejezca con dignidad y acompañe la vida diaria del barrio.'
+      'Materiales durables y de fácil mantenimiento —azulejo, acero y madera— permiten que el espacio envejezca con honestidad y acompañe la vida diaria del barrio.'
     ],
     quote: 'Un lugar donde habitar sea también disfrutar la vida.',
     gallery: [
@@ -39,17 +39,17 @@ window.PROJECTS = [
     subtitle: 'Vivienda unifamiliar',
     location: 'Monterrey, N.L., México',
     shortLocation: 'Monterrey, N.L.',
-    year: '2024',
+    year: '2026',
     area: '320 m²',
     status: 'Proyecto ejecutivo',
     service: 'Arquitectura + Consultoría',
     cover: 'assets/img/casa-corten/escalera',
     hero: 'assets/img/casa-corten/iso',
-    lead: 'Una vivienda que se escalona con el terreno y se protege del sol poniente con una piel de acero corten. La luz entra filtrada; el recorrido se vuelve experiencia.',
+    lead: 'Una vivienda que se deja envolver por su contexto, articulada por una circulación que rompe la barrera entre el interior y el exterior.',
     body: [
-      'El proyecto parte de escuchar al terreno: una pendiente pronunciada y vistas abiertas hacia la sierra. En lugar de nivelar, la casa se acomoda en tres plataformas que siguen la topografía y generan patios intermedios.',
-      'La escalera es el corazón de la vivienda. Un volumen vertical revestido en corten y celosía de madera que filtra la luz y conecta los espacios sociales con los privados, convirtiendo el recorrido diario en una experiencia sensorial.',
-      'Materiales honestos —concreto aparente, acero corten y madera— envejecen con dignidad y reducen el mantenimiento. La ventilación cruzada y la orientación controlada disminuyen la demanda energética.'
+      'La vivienda se implanta sobre el predio, adaptada a la topografía y aumentando los remetimientos, permitiendo que el parque frente a ella envuelva al proyecto. El volumen principal se divide en 3 niveles desfasados, organizando una parte del programa en cada nivel. Generando una secuencia vertical que parte del espacio publico al privado.',
+      'Se proyecta una estructura de concreto armado en base a una retícula de 1.22m x 1.22m, la cual genera una planta libre en donde el programa se desenvuelve',
+      'El proyecto se articula por medio de una escalera de acero corten que te recibe, generando un zaguán y dando paso a un recorrido que rompe la barrera entre el exterior y el interior. Donde la luz entra y cambia durante el día, con una trasparencia que brinda un recorrido sensorial que evoluciona con el paso del día.'
     ],
     quote: 'Cada obra debe encontrar su propio lenguaje, en respuesta al contexto del que forma parte.',
     gallery: [
@@ -66,7 +66,7 @@ window.PROJECTS = [
     subtitle: 'Vivienda unifamiliar',
     location: 'Santiago, N.L., México',
     shortLocation: 'Santiago, N.L.',
-    year: '2024',
+    year: '2026',
     area: '240 m²',
     status: 'Anteproyecto',
     service: 'Arquitectura',
@@ -92,7 +92,7 @@ window.PROJECTS = [
     subtitle: 'Equipamiento urbano',
     location: 'Col. Independencia, Monterrey, N.L.',
     shortLocation: 'Monterrey, N.L.',
-    year: '2023',
+    year: '2026',
     area: '2,400 m²',
     status: 'Propuesta',
     service: 'Arquitectura + Urbanismo',
