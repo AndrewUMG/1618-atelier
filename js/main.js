@@ -111,6 +111,32 @@ function initHeader() {
   }, { passive: true });
 }
 
+/* ---------- Botón volver arriba ---------- */
+function initToTop() {
+  const btn = $('[data-to-top]');
+  if (!btn) return;
+  let ticking = false;
+  const update = () => {
+    const show = window.scrollY > Math.max(400, window.innerHeight * 0.5);
+    btn.classList.toggle('is-visible', show);
+    btn.tabIndex = show ? 0 : -1;
+    btn.setAttribute('aria-hidden', show ? 'false' : 'true');
+    ticking = false;
+  };
+  window.addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(update);
+  }, { passive: true });
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    // The button hides itself; hand focus to the header logo so it is not lost
+    const home = $('[data-header] a');
+    if (home) home.focus({ preventScroll: true });
+  });
+  update();
+}
+
 /* ---------- Enlace activo según la sección visible ---------- */
 function initActiveNav() {
   const links = $$('.nav__link[href^="#"]');
@@ -347,6 +373,7 @@ renderTeam();
 initSocial();
 initYear();
 initHeader();
+initToTop();
 initActiveNav();
 initMobileMenu();
 initHero();
