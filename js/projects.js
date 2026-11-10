@@ -152,9 +152,9 @@ window.PROJECTS = [
     hero: 'assets/img/estacion-madriguera/vista-1',
     lead: 'Una estación de bomberos que se asienta sobre un predio triangular y se abre a la calle con una cubierta inclinada y una estructura ligera.',
     body: [
-      'Texto provisional. Estación Madriguera se desarrolla sobre un predio triangular entre vialidades y áreas verdes, con un volumen largo que se adapta a la topografía.',
-      'Texto provisional. La propuesta se estudió mediante diagramas, maquetas de sitio y de estructura, y dibujos de plantas, cortes y elevaciones.',
-      'Texto provisional. Descripción del programa, los materiales y la estrategia constructiva por confirmar con la agencia.'
+      'Estación Madriguera se desarrolla sobre un predio triangular entre vialidades y áreas verdes, con un volumen largo que se adapta a la topografía.',
+      'La propuesta se estudió mediante diagramas, maquetas de sitio y de estructura, y dibujos de plantas, cortes y elevaciones.',
+      'Descripción del programa, los materiales y la estrategia constructiva por confirmar con la agencia.'
     ],
     quote: 'Una estación que cuida a la ciudad y se deja habitar por ella.',
     gallery: [
