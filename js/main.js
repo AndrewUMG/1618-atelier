@@ -4,16 +4,11 @@
 
 /* ---------- Configuración ---------- */
 const CONFIG = {
-  // Enlaces de redes pendientes de confirmar con la agencia.
-  // Mientras estén vacíos, los botones muestran "Próximamente".
-  social: {
-    facebook: '',
-    tiktok: ''
-  },
+  // Redes, correo y equipo viven en js/site.js (window.SITE).
+  // Redes con url vacía muestran "Próximamente".
   // Endpoint para el formulario (p. ej. Formspree: https://formspree.io/f/xxxxxx).
   // Si queda vacío, el formulario abre el cliente de correo con el mensaje listo.
   formEndpoint: '',
-  contactEmail: 'santiagom@1618-atelier.com',
   heroInterval: 6000
 };
 
@@ -22,10 +17,66 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const pad = n => String(n).padStart(2, '0');
 
+/* ---------- Datos del sitio (js/site.js) ---------- */
+const SITE = window.SITE || { team: [], social: {}, contact: { phone: {}, whatsapp: {}, instagram: {}, locations: [] } };
+const esc = v => String(v).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const icon = (name, cls = '') => `<svg class="icon${cls ? ' ' + cls : ''}"><use href="#i-${name}"/></svg>`;
+
+const SOCIAL_LABELS = { instagram: 'Instagram', facebook: 'Facebook', tiktok: 'TikTok', whatsapp: 'WhatsApp' };
+const SOCIAL_ORDER = {
+  header: ['instagram', 'facebook', 'tiktok', 'whatsapp'],
+  row: ['whatsapp', 'facebook', 'tiktok', 'instagram']
+};
+
+function renderSocial() {
+  $$('[data-social-row]').forEach(wrap => {
+    const kind = wrap.dataset.socialRow;
+    const cls = kind === 'row' ? 'social-btn social-btn--dark' : '';
+    wrap.innerHTML = (SOCIAL_ORDER[kind] || []).map(net => {
+      const url = SITE.social[net];
+      const attrs = (cls ? `class="${cls}" ` : '') +
+        (url ? `href="${esc(url)}"` : `href="#" data-social="${net}"`);
+      return `<a ${attrs} target="_blank" rel="noopener" aria-label="${SOCIAL_LABELS[net]}">${icon(net)}</a>`;
+    }).join('');
+  });
+}
+
+function renderContact() {
+  const c = SITE.contact;
+  $$('[data-email]').forEach(a => {
+    a.href = `mailto:${c.email}`;
+    a.textContent = c.email;
+  });
+  $$('[data-wa-link]').forEach(a => { a.href = SITE.social.whatsapp; });
+  $$('[data-locations]').forEach(el => { el.textContent = c.locations.join('  ·  '); });
+
+  const list = $('[data-contact-list]');
+  if (list) {
+    const item = (href, ico, label, value, external) => `
+      <li><a href="${esc(href)}"${external ? ' target="_blank" rel="noopener"' : ''}>${icon(ico)}<span><span class="eyebrow muted">${label}</span><span class="body-l">${esc(value)}</span></span>${icon('arrow-up-right', 'icon--sm muted')}</a></li>`;
+    list.innerHTML =
+      item(`mailto:${c.email}`, 'mail', 'Correo', c.email) +
+      item(c.phone.href, 'phone', 'Llamadas', c.phone.display) +
+      item(SITE.social.whatsapp, 'whatsapp', 'WhatsApp', c.whatsapp.display, true) +
+      item(SITE.social.instagram, 'instagram', 'Instagram', c.instagram.display, true);
+  }
+}
+
+function renderTeam() {
+  const grid = $('[data-team]');
+  if (!grid) return;
+  grid.innerHTML = SITE.team.map(m => `
+    <li class="team__member reveal">
+      <div class="team__photo"><span class="eyebrow muted">Retrato</span></div>
+      <h4 class="h3">${esc(m.name)}</h4>
+      <p class="small muted">${esc(m.role)}</p>
+    </li>`).join('');
+}
+
 /* ---------- Redes sociales ---------- */
 function initSocial() {
   $$('[data-social]').forEach(a => {
-    const url = CONFIG.social[a.dataset.social];
+    const url = SITE.social[a.dataset.social];
     if (url) {
       a.href = url;
     } else {
@@ -58,6 +109,32 @@ function initHeader() {
       ticking = false;
     });
   }, { passive: true });
+}
+
+/* ---------- Botón volver arriba ---------- */
+function initToTop() {
+  const btn = $('[data-to-top]');
+  if (!btn) return;
+  let ticking = false;
+  const update = () => {
+    const show = window.scrollY > Math.max(400, window.innerHeight * 0.5);
+    btn.classList.toggle('is-visible', show);
+    btn.tabIndex = show ? 0 : -1;
+    btn.setAttribute('aria-hidden', show ? 'false' : 'true');
+    ticking = false;
+  };
+  window.addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(update);
+  }, { passive: true });
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    // The button hides itself; hand focus to the header logo so it is not lost
+    const home = $('[data-header] a');
+    if (home) home.focus({ preventScroll: true });
+  });
+  update();
 }
 
 /* ---------- Enlace activo según la sección visible ---------- */
@@ -265,7 +342,7 @@ function initForm() {
     if (!CONFIG.formEndpoint) {
       const subject = encodeURIComponent(`Contacto web — ${data.nombre}`);
       const body = encodeURIComponent(`${data.mensaje}\n\n${data.nombre}\n${data.email}`);
-      window.location.href = `mailto:${CONFIG.contactEmail}?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:${SITE.contact.email}?subject=${subject}&body=${body}`;
       status.textContent = 'Abrimos tu aplicación de correo con el mensaje listo para enviar. ¡Gracias por escribirnos!';
       form.reset();
       return;
@@ -282,7 +359,7 @@ function initForm() {
       status.textContent = 'Gracias por escribirnos. Te responderemos en menos de 48 horas.';
       form.reset();
     } catch {
-      status.textContent = `No pudimos enviar tu mensaje. Escríbenos directamente a ${CONFIG.contactEmail}.`;
+      status.textContent = `No pudimos enviar tu mensaje. Escríbenos directamente a ${SITE.contact.email}.`;
     } finally {
       submit.disabled = false;
     }
@@ -290,9 +367,13 @@ function initForm() {
 }
 
 document.documentElement.classList.remove('no-js');
+renderSocial();
+renderContact();
+renderTeam();
 initSocial();
 initYear();
 initHeader();
+initToTop();
 initActiveNav();
 initMobileMenu();
 initHero();

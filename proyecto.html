@@ -21,10 +21,14 @@
     <symbol id="i-phone" viewBox="0 0 24 24" fill="none"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
     <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none"><path d="M3 12h18M15 6l6 6-6 6" stroke="currentColor" stroke-width="1.5"/></symbol>
     <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none"><path d="M21 12H3M9 6l-6 6 6 6" stroke="currentColor" stroke-width="1.5"/></symbol>
-    <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M8 7h9v9" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none"><path d="M12 21V3M6 9l6-6 6 6" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-arrow-up-right"viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M8 7h9v9" stroke="currentColor" stroke-width="1.5"/></symbol>
     <symbol id="i-arrow-down" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M6 15l6 6 6-6" stroke="currentColor" stroke-width="1.5"/></symbol>
     <symbol id="i-menu" viewBox="0 0 24 24" fill="none"><path d="M3 8h18M3 16h18" stroke="currentColor" stroke-width="1.5"/></symbol>
     <symbol id="i-close" viewBox="0 0 24 24" fill="none"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-zoom-in" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-zoom-out" viewBox="0 0 24 24" fill="none"><path d="M5 12h14" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-fit" viewBox="0 0 24 24" fill="none"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" stroke="currentColor" stroke-width="1.5"/></symbol>
   </svg>
 
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -43,12 +47,7 @@
         <a class="nav__link" href="index.html#nosotros">Nosotros</a>
         <a class="nav__link" href="index.html#contacto">Contacto</a>
       </nav>
-      <div class="header__social">
-        <a href="https://www.instagram.com/1618.atelier/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
-        <a href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
-        <a href="#" data-social="tiktok" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon"><use href="#i-tiktok"/></svg></a>
-        <a href="https://wa.me/50255627167" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon"><use href="#i-whatsapp"/></svg></a>
-      </div>
+      <div class="header__social" data-social-row="header"></div>
       <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil" data-menu-open>
         <svg class="icon icon--lg"><use href="#i-menu"/></svg>
       </button>
@@ -68,13 +67,8 @@
       <a href="index.html#contacto"><span class="eyebrow">04</span>Contacto</a>
     </nav>
     <div class="mobile-menu__bottom">
-      <a class="small" href="mailto:santiagom@1618-atelier.com">santiagom@1618-atelier.com</a>
-      <div class="social-row">
-        <a class="social-btn social-btn--dark" href="https://wa.me/50255627167" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon"><use href="#i-whatsapp"/></svg></a>
-        <a class="social-btn social-btn--dark" href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
-        <a class="social-btn social-btn--dark" href="#" data-social="tiktok" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon"><use href="#i-tiktok"/></svg></a>
-        <a class="social-btn social-btn--dark" href="https://www.instagram.com/1618.atelier/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
-      </div>
+      <a class="small" data-email></a>
+      <div class="social-row" data-social-row="row"></div>
     </div>
   </div>
 
@@ -86,8 +80,13 @@
   </main>
 
   <div class="lightbox" data-lightbox hidden>
-    <button type="button" aria-label="Cerrar imagen" data-lightbox-close><svg class="icon icon--lg"><use href="#i-close"/></svg></button>
-    <img alt="">
+    <button type="button" class="lightbox__close" aria-label="Cerrar imagen" data-lightbox-close><svg class="icon icon--lg"><use href="#i-close"/></svg></button>
+    <img alt="" draggable="false">
+    <div class="lightbox__tools" role="toolbar" aria-label="Zoom de la imagen" data-lightbox-tools>
+      <button type="button" aria-label="Alejar" data-zoom="out"><svg class="icon"><use href="#i-zoom-out"/></svg></button>
+      <button type="button" aria-label="Ajustar a la ventana" data-zoom="fit"><svg class="icon"><use href="#i-fit"/></svg></button>
+      <button type="button" aria-label="Acercar" data-zoom="in"><svg class="icon"><use href="#i-zoom-in"/></svg></button>
+    </div>
   </div>
 
   <!-- Footer -->
@@ -101,26 +100,26 @@
         <nav class="footer__nav" aria-label="Pie de página">
           <a href="index.html#proyectos">Proyectos</a><a href="index.html#nosotros">Nosotros</a><a href="index.html#contacto">Contacto</a>
         </nav>
-        <div class="social-row">
-          <a class="social-btn social-btn--dark" href="https://wa.me/50255627167" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon"><use href="#i-whatsapp"/></svg></a>
-          <a class="social-btn social-btn--dark" href="#" data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
-          <a class="social-btn social-btn--dark" href="#" data-social="tiktok" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon"><use href="#i-tiktok"/></svg></a>
-          <a class="social-btn social-btn--dark" href="https://www.instagram.com/1618.atelier/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
-        </div>
+        <div class="social-row" data-social-row="row"></div>
       </div>
       <div class="footer__bottom small">
         <span>© <span data-year>2026</span> 1618 Atelier. Todos los derechos reservados.</span>
-        <span>Monterrey, México &nbsp;·&nbsp; Guatemala</span>
+        <span data-locations></span>
       </div>
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/50255627167" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <button class="to-top" type="button" data-to-top aria-label="Volver arriba" tabindex="-1" aria-hidden="true">
+    <svg class="icon"><use href="#i-arrow-up"/></svg>
+  </button>
+
+  <a class="wa-float" data-wa-link href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
     <svg class="icon"><use href="#i-whatsapp"/></svg><span>Escríbenos</span>
   </a>
 
   <script src="js/projects.js"></script>
   <script src="js/project.js"></script>
+  <script src="js/site.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
