@@ -41,7 +41,7 @@
 
   const gallery = p.gallery.map(g => `
     <figure class="reveal${g.layout === 'full' ? ' is-full' : ''}">
-      <img src="${g.src}.jpg" alt="${g.alt}" loading="lazy">
+      <img src="${/\.[a-z0-9]+$/i.test(g.src) ? g.src : g.src + '.jpg'}" alt="${g.alt}" loading="lazy" decoding="async">
       ${g.caption ? `<figcaption class="small">${g.caption}</figcaption>` : ''}
     </figure>`).join('');
 
