@@ -3,18 +3,21 @@
  * Editar aquí; main.js los renderiza en ambas páginas.
  * Una red con url vacía ('') muestra "Próximamente".
  */
+
+const rol = 'Arquitecto · Socio fundador';
+
 window.SITE = {
   team: [
-    { name: 'Santiago Martínez', role: 'Arquitecto · Socio fundador' },
-    { name: 'Angel Méndez', role: 'Arquitecto · Socio fundador' },
-    { name: 'Emilio Ángeles', role: 'Arquitecto · Socio fundador' },
-    { name: 'Adrián Alejandro del Ángel', role: 'Arquitecto · Socio fundador' }
+    { name: 'Santiago Martínez', role: rol },
+    { name: 'Angel Méndez', role: rol },
+    { name: 'Emilio Ángeles', role: rol },
+    { name: 'Adrián Alejandro del Ángel', role: rol }
   ],
   social: {
     instagram: 'https://www.instagram.com/1618.atelier/',
     whatsapp: 'https://wa.me/50255627167',
-    facebook: '',
-    tiktok: ''
+    facebook: 'https://www.facebook.com/people/Atelier-1618/61596580205236/',
+    tiktok: 'https://www.tiktok.com/@1618.atelier/'
   },
   contact: {
     email: 'santiagom@1618-atelier.com',
