@@ -177,20 +177,13 @@ window.PROJECTS = [
       { src: 'assets/img/col-independencia/luz.png', alt: 'Render de la cubierta con luz filtrada', layout: 'half' },
       { src: 'assets/img/col-independencia/pasto.png', alt: 'Render del jardín con niños jugando', layout: 'half' },
       { src: 'assets/img/col-independencia/salon.png', alt: 'Render del interior de un salón', layout: 'half' },
-      { src: 'assets/img/col-independencia/explotado', alt: 'Axonometría explotada por niveles', layout: 'half' },
-      { src: 'assets/img/col-independencia/axo', alt: 'Axonometría general', layout: 'half' },
-      { src: 'assets/img/col-independencia/planta-baja', alt: 'Planta baja del equipamiento', layout: 'half', caption: 'Planta baja.' },
-      { src: 'assets/img/col-independencia/estructura', alt: 'Axonometría estructural', layout: 'half' },
-      { src: 'assets/img/col-independencia/sitio.png', alt: 'Plano de sitio y contexto urbano', layout: 'full', caption: 'Sitio.' },
-      { src: 'assets/img/col-independencia/planta-alta.png', alt: 'Planta alta', layout: 'half', caption: 'Planta alta.' },
-      { src: 'assets/img/col-independencia/planta-baja-gris.png', alt: 'Planta baja en escala de grises', layout: 'half', caption: 'Planta baja (gris).' },
       { src: 'assets/img/col-independencia/elevaciones-combinado.png', alt: 'Elevaciones combinadas', layout: 'full', caption: 'Elevaciones.' },
-      { src: 'assets/img/col-independencia/d111-corte-trans-1.png', alt: 'Corte transversal, versión original en alta resolución', layout: 'full', caption: 'Corte transversal (D111).' },
-      { src: 'assets/img/col-independencia/elevacion-este-gris.png', alt: 'Elevación este en escala de grises', layout: 'full', caption: 'Elevación este (gris).' },
+      { src: 'assets/img/col-independencia/estructura.png', alt: 'Axonometría estructural', layout: 'half' },
+      { src: 'assets/img/col-independencia/sitio.png', alt: 'Plano de sitio y contexto urbano', layout: 'half', caption: 'Sitio.' },
+      { src: 'assets/img/col-independencia/planta-baja-gris.png', alt: 'Planta baja en escala de grises', layout: 'half', caption: 'Planta baja (gris).' },
+      { src: 'assets/img/col-independencia/planta-alta.png', alt: 'Planta alta', layout: 'half', caption: 'Planta alta.' },
       { src: 'assets/img/col-independencia/zonificacion-gris.png', alt: 'Zonificación en escala de grises', layout: 'half' },
       { src: 'assets/img/col-independencia/axo-explotado-detalle.png', alt: 'Axonometría explotada con detalle de programa', layout: 'half' },
-      { src: 'assets/img/col-independencia/d112-elevacion-este.png', alt: 'Elevación este, versión azul en alta resolución', layout: 'full', caption: 'Elevación este (D112).' },
-      { src: 'assets/img/col-independencia/d114-elevacion-sur.png', alt: 'Elevación sur, versión original en alta resolución', layout: 'full', caption: 'Elevación sur (D114).' }
     ]
   }
 ];
