@@ -339,8 +339,9 @@ h1, h2, h3, h4, p, blockquote { margin: 0; }
   background: var(--black); color: var(--white);
   font-weight: 500; font-size: 12px; letter-spacing: .2em; text-transform: uppercase;
   box-shadow: 0 8px 24px rgba(0,0,0,.25);
-  transition: transform .3s var(--ease), background .3s;
+  transition: transform .3s var(--ease), background .3s, opacity .3s var(--ease), visibility .3s;
 }
+.wa-float.is-hidden { opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(12px); }
 .wa-float:hover { transform: translateY(-3px); background: var(--gray-900); }
 .wa-float .icon { width: 20px; height: 20px; }
 
