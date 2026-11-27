@@ -137,6 +137,16 @@ function initToTop() {
   update();
 }
 
+/* ---------- Ocultar WhatsApp flotante sobre el footer ---------- */
+function initWaFloat() {
+  const btn = $('.wa-float');
+  const footer = $('.footer');
+  if (!btn || !footer || !('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => {
+    btn.classList.toggle('is-hidden', entry.isIntersecting);
+  }).observe(footer);
+}
+
 /* ---------- Enlace activo según la sección visible ---------- */
 function initActiveNav() {
   const links = $$('.nav__link[href^="#"]');
@@ -374,6 +384,7 @@ initSocial();
 initYear();
 initHeader();
 initToTop();
+initWaFloat();
 initActiveNav();
 initMobileMenu();
 initHero();
